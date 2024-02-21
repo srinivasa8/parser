@@ -30,5 +30,6 @@ public class ParserFileUtils{
         } catch (IOException e) {
             System.out.println("Exception occurred while clearFiles for path :" + localPath + " with error : " + e);
         }
+        System.out.println("Cleared all the used files!");
     }
 }

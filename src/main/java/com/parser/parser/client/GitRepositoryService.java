@@ -87,7 +87,7 @@ public class GitRepositoryService {
         try {
             repositories = restTemplate.getForObject(apiUrl, Repository[].class);
         } catch (Exception e) {
-            System.out.println("Error occurred while getAllRepositories call with error:"+e);
+            System.out.println("Error occurred while getAllRepositories call with error:" + e);
         }
         return repositories;
     }
