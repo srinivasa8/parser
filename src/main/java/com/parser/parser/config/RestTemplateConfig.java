@@ -7,17 +7,18 @@ import org.springframework.core.env.Environment;
 import org.springframework.web.client.RestTemplate;
 
 @Configuration
-class RestTemplateConfig{
+class RestTemplateConfig {
 
     @Autowired
     Environment env;
 
     @Bean
-    RestTemplate restTemplate(){
+    RestTemplate restTemplate() {
         RestTemplate restTemplate = new RestTemplate();
         restTemplate.getInterceptors().add(
-                (request,body,execution)->{ request.getHeaders().add("Authorization","Bearer "+env.getProperty("apikey"));
-                    return execution.execute(request,body);
+                (request, body, execution) -> {
+                    request.getHeaders().add("Authorization", "Bearer " + env.getProperty("github.apikey"));
+                    return execution.execute(request, body);
                 }
         );
         return restTemplate;

@@ -22,10 +22,10 @@ public class GitRepositoryService {
     @Autowired
     private RestTemplate restTemplate;
 
-    @Value("${apiUrl}")
+    @Value("${github.api.url}")
     private String apiUrl;
 
-    @Value("${localPath}")
+    @Value("${localpath}")
     private String localpath;
 
     public GitRepositoryService(UsernamePasswordCredentialsProvider credentialsProvider,

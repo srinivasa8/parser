@@ -14,7 +14,7 @@ class JGitConfig{
 
     @Bean
     UsernamePasswordCredentialsProvider credentialsProvider(){
-        return new UsernamePasswordCredentialsProvider(env.getProperty("username"), env.getProperty("apikey"));
+        return new UsernamePasswordCredentialsProvider(env.getProperty("github.username"), env.getProperty("github.apikey"));
     }
 
 }
