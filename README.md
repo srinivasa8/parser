@@ -20,7 +20,7 @@ This Spring Boot application was crafted for an assignment with the objective of
    https://github.com/srinivasa8/parser.git
 2.	Open the project using an IDE like IntelliJ IDEA, Eclipse, or Spring Tool Suite.
 3. Using the terminal or within your IDE, execute mvn clean install to build the project and ensure the build completes successfully without any errors.
-4. Locate the Driver file and replace the values for below variable.
+4. Locate the Driver class file and replace the values for below variables.
     ```bash
           String localPath = "{LOCALPATH}";
           String apiKey = "{GITHUB_API_KEY}";
